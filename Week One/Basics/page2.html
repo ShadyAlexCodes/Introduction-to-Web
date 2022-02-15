@@ -1,7 +1,23 @@
+<!DOCTYPE html>
 <html>
 
     <head>
         <title>Page 2</title>
+        <link href="style.css" rel="stylesheet" />
+        <script>
+            function onClick() {
+                let elementId = document.getElementById("display");
+
+                if (elementId.style.display == "none") {
+                    elementId.style.display = "block";
+                    setTimeout(() => elementId.style.display = "none", 5000)
+                    
+                } else {
+                    elementId.style.display = "none";
+                }
+            }
+
+        </script>
     </head>
 
     <body>
@@ -15,6 +31,50 @@
                 </ul>
             </nav>
         </header>
+        <h1>Page 2 </h1>
+        <p id="display" style="display: none;">Page two is amazing</p>
+        <table border="1">
+            <tr>
+                <th>Movie</th>
+                <th>Genre</th>
+                <th>Rating (1-5)</th>
+            </tr>
+            <tr>
+                <td>lorem</td>
+                <td>ipsum</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>lorem</td>
+                <td>ipsum</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>lorem</td>
+                <td>ipsum</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>lorem</td>
+                <td>ipsum</td>
+                <td>4</td>
+            </tr>
+
+        </table>
+
+        <button style="padding: 1.2rem; border-radius: 3px; background-color: #ff0fff; color: #fff; border: none;"
+            onclick="onClick()">You're a dumbass</button>
+
+        <button style="padding: 1.2rem; border-radius: 3px; background-color: #ff0fff; color: #fff; border: none;">
+            <a href="index.html" style="background-color: red !important;">You're a dumbass</a>
+        </button>
+
+        <a href="index.html" style="background-color: red !important;">
+            <button style="padding: 1.2rem; border-radius: 3px; background-color: #ff0fff; color: #fff; border: none;">
+                You're a dumbass
+            </button>
+        </a>
     </body>
+
 
 </html>
