@@ -1,0 +1,56 @@
+#container {
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    border: 1px solid #000;
+    flex: 1;
+}
+
+#box1 {
+    min-width: 200px;
+    max-width: 200px;
+}
+
+#box2 {
+    flex: 2;
+}
+
+#box5 {
+    flex: 0.5;
+}
+
+@media all and (max-width: 800px) {
+    #box4 {
+        display: none;
+    }
+}
+
+@media all and (max-width: 576px) {
+    #container {
+        flex-direction: column;
+        height: 600px;
+    }
+
+    #box1 {
+        order: 2;
+    }
+
+    #box2 {
+        order: 1;
+    }
+
+    #box3 {
+        order: 5;
+    }
+
+    #box4 {
+        display: block;
+        order: 4;
+    }
+
+    #box5 {
+        order: 3;
+    }
+}
