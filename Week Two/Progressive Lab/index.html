@@ -4,62 +4,91 @@
         <title>
             Home Page
         </title>
+        <meta name="viewport" content="width=device-width" />
+        <link href="./assets/styles/main.css" rel="stylesheet" />
     </head>
 
     <body>
-
+        <div class="header-gradient"></div>
         <header>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="./interests.html">Interests</a>
-                    </li>
-                    <li>
-                        <a href="./favorites.html">Favorites</a>
-                    </li>
-                    <li>
-                        <a href="./plans.html">Plans</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="card">
+                <div class="card-body">
+                    <h1>Home Page</h1>
+                </div>
+            </div>
+            <div class="nav-row">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./interests.html">Interests</a>
+                        </li>
+                        <li>
+                            <a href="./favorites.html">Favorites</a>
+                        </li>
+                        <li>
+                            <a href="./plans.html">Plans</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <section>
-            <div>
-                <h1>About Me...</h1>
-                <p>
-                    Xander Endre is a Freshman at <b>Neumont College of Computer Science</b>. He attends from Henderson,
-                    Nevada where his family is excitedly rooting him on for his future! Over the past 5 years Xander has
-                    been learning to program: <b>building websites for educational institutions, working for a childrens
-                        coding center, building a learning management system, and building an order management system
-                        for
-                        local companies</b>.
-                </p>
-                <p>
-                    Xander enjoys teaching children to code in his freetime to help them begin paving their own paths.
-                    He also enjoys tutoring those around him to make sure they are understanding and grasping the
-                    content they're learning. Xander continues to demonstrate his worth ethic through college. He
-                    continously uploads and publishes his work to
-                    github <strong>(https://github.com/ShadyAlexCodes)</strong> for future recruiters to see. He
-                    anticipates
-                    that uploading his work over the past couple of years will allow other developers to take a look at
-                    his work and be inspired to learn how to program themselves!
-                </p>
+            <div class="row">
+                <div class="col-1">
+                    <div class="card mr-2 about-me">
+                        <img height=160 src="./assets/pictures/small_profile_picture.jpg" />
+                        <h1>Xander Endre</h1>
+                    </div>
+                </div>
 
-                <h2>Quick Facts!</h2>
-                <ul>
-                    <li>Favorite Animal: <em>Cats</em></li>
-                    <li>Favorite Color: <em>Black and Blue</em></li>
-                    <li>Favorite Food: <em>Mac 'n Cheese and Chocolate Chip Cookies</em></li>
-                    <li>Favorite Movie: <em>The Princess Bride</em></li>
-                </ul>
-            </div>
-            <div>
-                <h2>Picture of Me!</h2>
-                <img src="./assets/pictures/small_profile_picture.jpg" />
+                <div class="col-2 about-me">
+                    <div class="card mr-2">
+                        <h1>About Me!</h1>
+                        <p>
+                            Xander Endre is a Freshman at <b>Neumont College of Computer Science</b>. He
+                            attends from Henderson,
+                            Nevada where his family is excitedly rooting him on for his future! Over the
+                            past 5 years Xander has
+                            been learning to program: <b>building websites for educational institutions,
+                                working for a childrens coding center, building a learning management system, and
+                                building an
+                                order management system for local companies</b>.
+                        </p>
+                        <br>
+                        <p>
+                            Xander enjoys teaching children to code in his freetime to help them begin paving their own
+                            paths.
+                            He also enjoys tutoring those around him to make sure they are understanding and grasping
+                            the
+                            content they're learning. Xander continues to demonstrate his worth ethic through college.
+                            He
+                            continously uploads and publishes his work to
+                            github <strong>(<a
+                                    href="https://github.com/ShadyAlexCodes">https://github.com/ShadyAlexCodes</a>)</strong>
+                            for future recruiters to see. He
+                            anticipates
+                            that uploading his work over the past couple of years will allow other developers to take a
+                            look at
+                            his work and be inspired to learn how to program themselves!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-1 quick-facts">
+                    <div class="card">
+                        <h2>Quick Facts!</h2>
+                        <ul>
+                            <li>Favorite Animal: <em>Cats</em></li>
+                            <li>Favorite Color: <em>Black and Blue</em></li>
+                            <li>Favorite Food: <em>Mac 'n Cheese and Chocolate Chip Cookies</em></li>
+                            <li>Favorite Movie: <em>The Princess Bride</em></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 

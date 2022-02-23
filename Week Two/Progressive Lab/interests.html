@@ -4,67 +4,124 @@
         <title>
             My Interests
         </title>
+        <meta name="viewport" content="width=device-width" />
+        <link href="./assets/styles/main.css" rel="stylesheet" />
     </head>
 
     <body>
-
+        <div class="header-gradient"></div>
         <header>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="./interests.html">Interests</a>
-                    </li>
-                    <li>
-                        <a href="./favorites.html">Favorites</a>
-                    </li>
-                    <li>
-                        <a href="./plans.html">Plans</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="card first">
+                <div class="card-body">
+                    <h1>My Interests</h1>
+                </div>
+            </div>
+            <div class="nav-row second">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./interests.html">Interests</a>
+                        </li>
+                        <li>
+                            <a href="./favorites.html">Favorites</a>
+                        </li>
+                        <li>
+                            <a href="./plans.html">Plans</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <section>
-            <h1>My Interests</h1>
-            <div>
-                <p>There are multiple different things that I enjoy doing in my freetime. I enjoy watching movies, playing video games, playing board games, and watching tv shows. Below this paragraph I have listed out some of my favorite things that I enjoy to do and watch. Things that are not listed on this table are reading books, baking, and I enjoy cleaning. Some of my favorite books are Red, White, and Royal Blue; Hitchhikers Guide to the Galaxy; Starwars; amongst many others. I enjoy baking cookies, cakes, and other pastries! These hobbies are something that I started doing when I lived in Las Vegas.</p>
-                <p>
-                    Watching movies has always been a big part of my life as it has allowed me and my siblings to connect on a closer level. Usually, my siblings and I do nto get along very well but when we watch movies like Starwars we are all able to connect and get along. Over the winter break we binged the entire Skywalker Series! I love to play video games with my friends and family as well! Some of my favorite games to play alone are Cities: Skylines, Minecraft, Planet Zoo, a nd Stardew Valley. When playing with friends I enjoy playing Minecraft, Valorant, Wizards 101, Unravel 1 and 2, and It Takes Two! Playing board games has always been a big part of my life both at home and in Salt Lake City! When the pandemic first started my family played phase 10 every night for fun! From there we found more board games like Trial by Trolley, Uno variations, Splendor, and many others!
-                </p>
-                <img
-                    src="https://minecraftbuildinginc.com/wp-content/uploads/2013/11/minecraft-dancing-zombie-dress.gif" />
-            </div>
-            <div>
-                <h2>List Of Interests</h2>
-                <table border="2">
-                    <tr>
-                        <th>Movies</th>
-                        <th>Video Games</th>
-                        <th>TV Shows</th>
-                        <th>Board Games</th>
-                    </tr>
-                    <tr>
-                        <td>Shrek</td>
-                        <td>Minecraft</td> 
-                        <td>Abbot Elementary</td>
-                        <td>Phase 10</td>
-                    </tr>
-                    <tr>
-                        <td>Cruella</td>
-                        <td>Sims 4</td>
-                        <td>The Simpsons</td>
-                        <td>Uno</td>
-                    </tr>
-                    <tr>
-                        <td>Encanto</td>
-                        <td>City Skylines</td>
-                        <td>Vox Mochina</td>
-                        <td>Connect Four</td>
-                    </tr>
-                </table>
+            <div class="row">
+                <div class="col-2 my-interests">
+                    <div class="card mr-2">
+                        <h1>My Interests</h1>
+                        <div>
+                            <p>There are multiple different things that I enjoy doing in my freetime. I enjoy watching
+                                movies,
+                                playing video games, playing board games, and watching tv shows. Below this paragraph I
+                                have
+                                listed
+                                out some of my favorite things that I enjoy to do and watch. Things that are not listed
+                                on
+                                this
+                                table are reading books, baking, and I enjoy cleaning. Some of my favorite books are
+                                Red,
+                                White, and
+                                Royal Blue; Hitchhikers Guide to the Galaxy; Starwars; amongst many others. I enjoy
+                                baking
+                                cookies,
+                                cakes, and other pastries! These hobbies are something that I started doing when I lived
+                                in
+                                Las
+                                Vegas.</p>
+                            <p>
+                                Watching movies has always been a big part of my life as it has allowed me and my
+                                siblings
+                                to
+                                connect on a closer level. Usually, my siblings and I do nto get along very well but
+                                when we
+                                watch
+                                movies like Starwars we are all able to connect and get along. Over the winter break we
+                                binged the
+                                entire Skywalker Series! I love to play video games with my friends and family as well!
+                                Some
+                                of my
+                                favorite games to play alone are Cities: Skylines, Minecraft, Planet Zoo, a nd Stardew
+                                Valley. When
+                                playing with friends I enjoy playing Minecraft, Valorant, Wizards 101, Unravel 1 and 2,
+                                and
+                                It Takes
+                                Two! Playing board games has always been a big part of my life both at home and in Salt
+                                Lake
+                                City!
+                                When the pandemic first started my family played phase 10 every night for fun! From
+                                there we
+                                found
+                                more board games like Trial by Trolley, Uno variations, Splendor, and many others!
+                            </p>
+                            <img
+                                src="https://minecraftbuildinginc.com/wp-content/uploads/2013/11/minecraft-dancing-zombie-dress.gif" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card">
+                        <h2>List Of Interests</h2>
+                        <table border="1">
+                            <tr>
+                                <th>Movies</th>
+                                <th>Video Games</th>
+                                <th>TV Shows</th>
+                                <th>Board Games</th>
+                            </tr>
+                            <tr>
+                                <td>Shrek</td>
+                                <td>Minecraft</td>
+                                <td>Abbot Elementary</td>
+                                <td>Phase 10</td>
+                            </tr>
+                            <tr>
+                                <td>Cruella</td>
+                                <td>Sims 4</td>
+                                <td>The Simpsons</td>
+                                <td>Uno</td>
+                            </tr>
+                            <tr>
+                                <td>Encanto</td>
+                                <td>City Skylines</td>
+                                <td>Vox Mochina</td>
+                                <td>Connect Four</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
         </section>
 
