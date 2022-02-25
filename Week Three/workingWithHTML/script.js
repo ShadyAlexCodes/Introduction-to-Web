@@ -9,6 +9,8 @@ const btn1 = document.getElementById('btn1');
 const btn2 = document.getElementById('btn2');
 const btn3 = document.getElementById('btn3');
 
+const guess_holder = document.getElementById('guess_holder')
+
 container.innerHTML = "<h1>You cannot tell me what to do!</h1>";
 
 
@@ -54,8 +56,19 @@ my_button.addEventListener('click', () => {
 
 
 const handleClick = (event) => {
-    console.log(event);
+    //console.log(event);
     container.innerHTML = `${event.target.id} has been clicked.`
+
+    if(event.target.id == 'btn1') {
+        let random =  Math.floor(Math.random() * 100) + 1;
+        btn1.innerHTML = random;
+    }
+
+    if(event.target.id == 'btn3') {
+        let stuff_in_the_box = guess_holder.value;
+
+        btn3.innerHTML =  10 + stuff_in_the_box;
+    }
 }
 
 btn1.addEventListener('click', handleClick);
